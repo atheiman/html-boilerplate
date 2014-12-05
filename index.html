@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML Boilerplate provided by Austin Heiman. https://github.com/atheiman -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site description here.">
+    <meta name="author" content="Author of site here.">
+    <!-- <link rel="icon" href="some_icon.ico"> -->
+
+    <title>Site Name</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- Site stylesheet -->
+    <!-- <link href="style.css" rel="stylesheet"> -->
+
+    <!-- AngularJS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script> -->
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="include" data-src="navbar.html"></div>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>HTML Boilerplate</h1>
+            <p>This boilerplate created by <a href="http://github.com/atheiman">Austin Heiman</a>. Source Gist located <a href="">here</a>.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor, hodor. Hodor hodor? Hodor, hodor. Hodor. Hodor, hodor hodor hodor. Hodor. Hodor hodor - hodor hodor, hodor, hodor hodor. Hodor. Hodor hodor, hodor. Hodor hodor. Hodor hodor - hodor; hodor hodor... Hodor hodor hodor hodor! Hodor. Hodor hodor... Hodor hodor HODOR hodor, hodor hodor - hodor. Hodor.</p>
+            </div>
+            <div class="col-sm-6">
+                <p>Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor, hodor. Hodor hodor? Hodor, hodor. Hodor. Hodor, hodor hodor hodor. Hodor. Hodor hodor - hodor hodor, hodor, hodor hodor. Hodor. Hodor hodor, hodor. Hodor hodor. Hodor hodor - hodor; hodor hodor... Hodor hodor hodor hodor! Hodor. Hodor hodor... Hodor hodor HODOR hodor, hodor hodor - hodor. Hodor.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="include" data-src="footer.html"></div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <script>
+    // Include files with class 'include' by 'data-src' attribute
+    $(function(){
+        $(".include").each(function(index) {
+            $(this).load($(this).attr("data-src"));
+        });
+    });
+    </script>
+
+    <!-- Set active nav element based on url path -->
+    <script src="nav.js"></script>
+
+    <!-- marked.js for rendering MarkDown content -->
+    <!-- <script src="https://raw.githubusercontent.com/chjj/marked/master/lib/marked.js"></script> -->
+
+    <!-- Site JavaScript -->
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
